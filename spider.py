@@ -37,7 +37,20 @@ def get_proxies(): #随机IP
     proxies = get_random_ip(ip_list)
     return proxies
 
-if __name__ == '__main__':
+def main_print(): #直接打印输出程序
+    count = 0
+    while True:
+        res = requests.get('https://www.nihaowua.com/', headers=headers, proxies=get_proxies())
+        res.encoding = 'utf-8'
+        selector = etree.HTML(res.text)
+        xpath_reg = "//p/text()"
+        results = selector.xpath(xpath_reg)
+        content = results[0]
+        count += 1
+        print('********正在爬取中，这是第{}次爬取********'.format(count))
+        print(content)
+
+def main_keep(): #写入txt文本程序
     count = 0
     with open("test.txt", "a") as f:
             while True:
@@ -49,4 +62,7 @@ if __name__ == '__main__':
                 content = results[0]
                 f.write(content + '\n')
                 count += 1
-                print('正在爬取中，这是第{}次爬取'.format(count))
+                print('********正在爬取中，这是第{}次爬取********'.format(count))
+
+if __name__ == '__main__':
+        main_print()
