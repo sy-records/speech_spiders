@@ -3,7 +3,7 @@
 看到了狂放小朋友的PHP版本的[污言爬虫](https://github.com/kfangf/USpider)，然后我就征求了一下小朋友的意见，他让我随意，我就改成了Python版本的爬虫~当做练手了
 
 版本：1.1  
-最后更新时间：2018/05/30 10:00  
+最后更新时间：2018/05/30 10:17  
 作者：[沈唁](https://qq52o.me)  
 作者博客：[https://qq52o.me](https://qq52o.me)  
 开源协议：[GPL v3](https://opensource.org/licenses/GPL-3.0)  
