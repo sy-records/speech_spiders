@@ -2,7 +2,7 @@
 
 看到了狂放小朋友的PHP版本的[污言爬虫](https://github.com/kfangf/USpider)，然后我就征求了一下小朋友的意见，他让我随意，我就改成了Python版本的爬虫~当做练手了
 
-版本：1.0  
+版本：1.1  
 最后更新时间：2018/05/30 10:00  
 作者：[沈唁](https://qq52o.me)  
 作者博客：[https://qq52o.me](https://qq52o.me)  
@@ -13,6 +13,8 @@ GitHub项目地址：[https://github.com/sy-records/USpider](https://github.com/
 
 # 更新  
 2018/05/30 10:00：将狂放小朋友的PHP版本改为Python版  
+
+2018/05/30 10:17：分为2个函数块，一个输出一个保存文本  
 
 # 模块
 使用了以下Python模块：  
