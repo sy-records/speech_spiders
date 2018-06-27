@@ -12,6 +12,8 @@ headers = {
     'User-Agent': get_random_ua()
 }
 
+url = 'https://www.nihaowua.com/'
+
 def get_ip_list(url, headers):
     web_data = requests.get(url, headers=headers)
     soup = BeautifulSoup(web_data.text, 'lxml')
@@ -40,10 +42,10 @@ def get_proxies(): #随机IP
 def main_print(): #直接打印输出程序
     count = 0
     while True:
-        res = requests.get('https://www.nihaowua.com/', headers=headers, proxies=get_proxies())
+        res = requests.get(url=url, headers=headers, proxies=get_proxies())
         res.encoding = 'utf-8'
         selector = etree.HTML(res.text)
-        xpath_reg = "//p/text()"
+        xpath_reg = "//section/div/*/text()"
         results = selector.xpath(xpath_reg)
         content = results[0]
         count += 1
@@ -54,10 +56,10 @@ def main_keep(): #写入txt文本程序
     count = 0
     with open("test.txt", "a") as f:
             while True:
-                res = requests.get('https://www.nihaowua.com/', headers=headers, proxies=get_proxies())
+                res = requests.get(url=url, headers=headers, proxies=get_proxies())
                 res.encoding = 'utf-8'
                 selector = etree.HTML(res.text)
-                xpath_reg = "//p/text()"
+                xpath_reg = "//section/div/*/text()"
                 results = selector.xpath(xpath_reg)
                 content = results[0]
                 f.write(content + '\n')
