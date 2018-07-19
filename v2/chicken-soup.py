@@ -15,9 +15,9 @@ url = 'https://www.nihaowua.com/home.html'
 
 def main(): #写入txt文本程序
     count = 0
-    with open("test.txt", "a") as f:
+    with open("soup.txt", "a") as f:
             while True:
-                res = requests.get(url=url, headers=headers,timeout=3)
+                res = requests.get(url=url, headers=headers,timeout=10)
                 res.encoding = 'utf-8'
                 selector = etree.HTML(res.text)
                 xpath_reg = "//section/div/*/text()"
