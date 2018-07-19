@@ -54,7 +54,7 @@ def main_print(): #直接打印输出程序
 
 def main_keep(): #写入txt文本程序
     count = 0
-    with open("test.txt", "a") as f:
+    with open("NiHaoWu.txt", "a") as f:
             while True:
                 res = requests.get(url=url, headers=headers, proxies=get_proxies())
                 res.encoding = 'utf-8'
