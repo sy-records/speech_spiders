@@ -1,29 +1,34 @@
-# USpider
+# speech
 
 看到了狂放小朋友的PHP版本的[污言爬虫](https://github.com/kfangf/USpider)，然后我就征求了一下小朋友的意见，他让我随意，我就改成了Python版本的爬虫~当做练手了
 
-版本：1.1  
-最后更新时间：2018/05/30 10:17  
+版本：2.0  
+
+最后更新时间：2018/07/19 17:20  
+
 作者：[沈唁](https://qq52o.me)  
+
 作者博客：[https://qq52o.me](https://qq52o.me)  
-开源协议：[GPL v3](https://opensource.org/licenses/GPL-3.0)  
-GitHub项目地址：[https://github.com/sy-records/USpider](https://github.com/sy-records/USpider)  
-版权归作者所有，任何人不得未经授权修改版权，二次开发请遵守开源协议  
-版权所有，侵权必究  
 
 # 更新  
-2018/05/30：将狂放小朋友的PHP版本改为Python版  
 
-2018/05/30：分为2个函数块，一个输出一个保存文本  
-
-2018/06/27：修改Xpath规则 通配版  
+2018/07/19：新增心灵毒鸡汤爬虫 上传一些文本数据
 
 2018/06/27：简版V2爬虫文件 上传自己爬取的1000条数据  
 
-# 模块
+2018/06/27：修改Xpath规则 通配版  
+
+2018/05/30：分为2个函数块，一个输出一个保存文本  
+
+2018/05/30：将狂放小朋友的PHP版本改为Python版  
+
+# 模块  
+
 使用了以下Python模块：  
+```python
 requests  
 random  
 lxml  
 bs4  
 fake_useragent 
+```
